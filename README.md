@@ -120,7 +120,7 @@ docker run -p 8000:8000 -e LLM_API_KEY=sk-... gridwise:latest
 curl http://localhost:8000/health
 ```
 
-Registry image: `docker.io/nahian-123/gridwise:v1`
+Registry image: `docker.io/nahian123/gridwise:v1`
 
 ## Known limitations
 
