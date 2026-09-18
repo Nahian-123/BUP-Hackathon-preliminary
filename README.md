@@ -35,7 +35,7 @@ reaching the optimizer.
   SDK. Works with OpenAI directly, or any OpenAI-compatible endpoint
   (Groq, Together, DeepSeek, a local vLLM/Ollama server) by setting
   `LLM_BASE_URL`.
-- Default model: `gpt-4o-mini` (override with `LLM_MODEL`).
+- Default model: `openai/gpt-oss-120b` (override with `LLM_MODEL`).
 - If no API key is configured or the call fails for any reason, the service
   fails safe: every note is returned as `no_op` rather than crashing or
   inventing a directive.
@@ -45,7 +45,7 @@ reaching the optimizer.
 | Variable | Required | Meaning |
 |---|---|---|
 | `LLM_API_KEY` | Yes (for real interpretation) | API key for the LLM provider |
-| `LLM_MODEL` | No | Model name, default `gpt-4o-mini` |
+| `LLM_MODEL` | No | Model name, default `openai/gpt-oss-120b` |
 | `LLM_BASE_URL` | No | Set only for a non-OpenAI OpenAI-compatible endpoint |
 | `PORT` | No | Service port, default `8000` |
 
